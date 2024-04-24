@@ -1,0 +1,63 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+
+$muzukanji-palette: (
+  50:   #f9e6eb,
+  100:  #f3c0ce,
+  200:  #eb9aaf,
+  300:  #e37591,
+  400:  #dc5e7b,
+  500:  #d65067,
+  600:  #c64b63,
+  700:  #b0455d,
+  800:  #9a4058,
+  900:  #73384c,
+  A100: #ffb4ab,
+  A200: #ffb4ab,
+  A400: #93000a,
+  A700: #690005,
+  contrast: (
+    50:  rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+
+$muzukanji-primary: mat.define-palette($muzukanji-palette, 800);
+$muzukanji-accent: mat.define-palette($muzukanji-palette, A100, A400);
+
+$muzukanji-theme: mat.define-light-theme((
+  color: (
+    primary: $muzukanji-primary,
+    accent: $muzukanji-accent,
+    warn: mat.define-palette(mat.$red-palette, 500)
+  )
+));
+
+
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($muzukanji-theme);
+
