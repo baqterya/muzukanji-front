@@ -21,7 +21,7 @@ $muzukanji-palette: (
   700:  #b0455d,
   800:  #9a4058,
   900:  #73384c,
-  A100: #ffb4ab,
+  A100: white,
   A200: #ffb4ab,
   A400: #93000a,
   A700: #690005,
@@ -43,8 +43,8 @@ $muzukanji-palette: (
   )
 );
 
-$muzukanji-primary: mat.define-palette($muzukanji-palette, 800);
-$muzukanji-accent: mat.define-palette($muzukanji-palette, A100, A400);
+$muzukanji-primary: mat.define-palette($muzukanji-palette, 800, 400, 900);
+$muzukanji-accent: mat.define-palette($muzukanji-palette, A100, A200, A400);
 
 $muzukanji-theme: mat.define-light-theme((
   color: (
