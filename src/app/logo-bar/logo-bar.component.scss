@@ -1,36 +1,49 @@
 @use '@angular/material' as mat;
 @import "../../muzukanji-theme.scss";
 
-.logo-bar {
+.site-nav {
     width: 100%;
     background-color: mat.get-theme-color($muzukanji-theme, primary);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav .left-bar {
+    display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 4px
+    gap: 40px;
 }
 
-.logo-bar h1 {
-    margin: 0 0 0 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    color: mat.get-theme-color($muzukanji-theme, accent);
-}
-
-
-.logo-bar button {
-    margin-left: 20px;
+.site-nav .left-bar button {
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 22px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
-
-.logo-bar img {
-    max-height: 120px;
+.site-nav .left-bar img {
+    max-height: 100px;
     width: auto;
 }
+
+.site-nav .right-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.site-nav .right-bar button {
+    padding: 10px;
+}
+
+.site-nav .right-bar button img {
+    min-height: 30px;
+    width: auto;
+}
+
 
