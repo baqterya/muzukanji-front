@@ -2,24 +2,35 @@
 @import "../../muzukanji-theme.scss";
 
 .logo-bar {
-  width: 100%;
-  background-color: mat.get-theme-color($muzukanji-theme, primary);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 4px
+    width: 100%;
+    background-color: mat.get-theme-color($muzukanji-theme, primary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px
 }
 
 .logo-bar h1 {
-  margin: 0 0 0 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  color: mat.get-theme-color($muzukanji-theme, accent);
+    margin: 0 0 0 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: mat.get-theme-color($muzukanji-theme, accent);
 }
 
+
+.logo-bar button {
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 .logo-bar img {
-  max-height: 120px;
-  width: auto;
+    max-height: 120px;
+    width: auto;
 }
 
