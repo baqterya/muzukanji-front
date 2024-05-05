@@ -6,8 +6,8 @@
     height: calc(100vh - 100px);
     padding-top: 18px;
     display: flex;
-    align-content: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: mat.get-theme-color($muzukanji-theme, primary);
 }
 
@@ -16,6 +16,16 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+
+.front-page-body h2 {
+    margin-right: 30%;
+    margin-left: 30%;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: justify;
 }
 
 
