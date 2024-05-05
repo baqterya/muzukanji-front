@@ -1,0 +1,22 @@
+@use '@angular/material' as mat;
+@import "../../muzukanji-theme.scss";
+
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: mat.get-theme-color($muzukanji-theme, primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer p {
+    margin: 0 20px 0 20px;
+    color: mat.get-theme-color($muzukanji-theme, accent);
+}
+
+.footer a {
+    color: mat.get-theme-color($muzukanji-theme, accent);
+    text-decoration: underline;
+}
