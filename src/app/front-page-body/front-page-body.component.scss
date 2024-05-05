@@ -1,0 +1,21 @@
+@use '@angular/material' as mat;
+@import "../../muzukanji-theme.scss";
+
+.front-page-body {
+    width: 100%;
+    height: calc(100vh - 100px);
+    padding-top: 18px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: mat.get-theme-color($muzukanji-theme, primary);
+}
+
+.front-page-body h1 {
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
